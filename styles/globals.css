@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Running dog sprite animation */
+.dog-run {
+  width: 256px;
+  height: 256px;
+  background: url('/images/dog_run_4x.png') 0 0 / auto 256px no-repeat;
+  image-rendering: auto;
+  animation: dogRun 0.6s steps(4) infinite;
+}
+
+@keyframes dogRun {
+  from { background-position-x: 0; }
+  to { background-position-x: -1024px; }
+}

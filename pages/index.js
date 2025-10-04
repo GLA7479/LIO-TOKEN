@@ -41,6 +41,11 @@ export default function Home() {
               </button>
             </Link>
           </div>
+
+          {/* Running dog preview */}
+          <div className="mt-10 mx-auto flex justify-center">
+            <div className="dog-run" aria-label="Running dog animation" />
+          </div>
         </div>
       </motion.main>
 
